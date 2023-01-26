@@ -8,9 +8,13 @@ is replaced by 0. 40 is the largest
 element so it is replaced by 3-1 = 2. And
 20 is the 2nd smallest element so it is
 replaced by 1.
+
+
+Expected Time Complexity: O(N*logN)
+Expected Auxiliary Space: O(N)
 */
 
-// solution
+// solution::
 class Solution{
 public:	
 	// Converts arr[0..n-1] to reduced form.
