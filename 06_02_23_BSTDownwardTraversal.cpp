@@ -7,7 +7,7 @@ Expected Auxiliary Space: O(Height of the tree).
 */
 
 class Solution
-{
+{ 
 public:
     bool f(Node *root, Node *&t, int target)
     {
