@@ -6,13 +6,3 @@
 
 
 
-
-
-## Welcome To This Repository
-
-- Here you will get solution to the POTD.
-- Language used -> C++ mostly , java , c  
-- The problems are in order of date.
-- Feel free if you wish to contribute. 🙏
-
-
