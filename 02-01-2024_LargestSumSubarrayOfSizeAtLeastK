@@ -1,0 +1,28 @@
+class Solution{
+    public:    
+    long long int maxSumWithK(long long int arr[], long long int n, long long int k) 
+    {
+      int ws=0,we=0;
+      long long res = -1e9 ,curr=0;
+      long long temp=0;
+      for(;we<n;we++)
+      {
+          curr += arr[we];
+          int windowSz = we-ws+1;
+          if(windowSz==k)
+            res = max(res,curr);
+          else if(windowSz>k)
+          {
+              temp += arr[ws];
+              ws++;
+              if(temp<0)
+              {
+                  curr-=temp;
+                  temp=0;
+              }
+              res = max(res,curr);
+          }
+      }
+      return res;
+    }
+};
