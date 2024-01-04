@@ -1,0 +1,11 @@
+  int singleElement(int arr[] ,int N) {
+        // code here
+        unordered_map<int,int>ump;
+        for(int i=0;i<N;i++)
+            ump[arr[i]]++;
+        for(int i=0;i<N;i++)
+            if(ump[arr[i]]==1) return arr[i];
+        return -1;
+    }
+
+// in this question we can also use bit manipulation
